@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilot Simulator Mini – A Birthday Flight for Thomas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="start-screen" class="screen">
+            <h1>A Birthday Flight for Thomas 💖</h1>
+            <p>Tap to start your journey Azizam!</p>
+        </div>
+        
+        <div id="game-screen" class="screen hidden">
+            <canvas id="gameCanvas"></canvas>
+            <div class="score">Hearts Collected: <span id="score">0</span>/10</div>
+        </div>
+        
+        <div id="end-screen" class="screen hidden">
+            <h1>You've collected all the love in the sky ✨</h1>
+            <p>Happy Birthday, Azizam 💕</p>
+            <p class="final-score">Hearts Collected: <span id="final-score">0</span>/10</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
