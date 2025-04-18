@@ -3,25 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pilot Simulator Mini – A Birthday Flight for Thomas</title>
+    <title>Pilot Simulator Mini - A Birthday Flight for Thomas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-container">
-        <div id="start-screen" class="screen">
-            <h1>A Birthday Flight for Thomas 💖</h1>
-            <p>Tap to start your journey Azizam!</p>
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen">
+            <h1>Pilot Simulator Mini</h1>
+            <p>A Birthday Flight for Thomas</p>
+            <button id="startButton">Start Flight</button>
         </div>
-        
-        <div id="game-screen" class="screen hidden">
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen hidden">
             <canvas id="gameCanvas"></canvas>
-            <div class="score">Hearts Collected: <span id="score">0</span>/10</div>
+            <div class="score">Score: 0</div>
         </div>
-        
-        <div id="end-screen" class="screen hidden">
-            <h1>You've collected all the love in the sky ✨</h1>
-            <p>Happy Birthday, Azizam 💕</p>
-            <p class="final-score">Hearts Collected: <span id="final-score">0</span>/10</p>
+
+        <!-- End Screen 1 -->
+        <div id="endScreen1" class="screen hidden">
+            <h1>Wow! You are an amazing pilot! ✨</h1>
+            <p>Click here for your gift!</p>
+            <button id="showGiftButton">Open Gift</button>
+        </div>
+
+        <!-- End Screen 2 -->
+        <div id="endScreen2" class="screen hidden">
+            <div class="birthday-message">
+                <h1>Happy Birthday Azizam Thomas <3</h1>
+                <p class="from-mary">from Mary, who will always adore you</p>
+                <div class="character-container">
+                    <div class="pilot-character">
+                        <div class="pilot-head">
+                            <div class="pilot-hair"></div>
+                            <div class="pilot-face">
+                                <div class="pilot-eyes"></div>
+                                <div class="pilot-mouth"></div>
+                            </div>
+                        </div>
+                        <div class="pilot-body">
+                            <div class="pilot-uniform"></div>
+                        </div>
+                    </div>
+                    <div class="girl-character">
+                        <div class="girl-head">
+                            <div class="girl-hair"></div>
+                            <div class="girl-face">
+                                <div class="girl-eyes"></div>
+                                <div class="girl-mouth"></div>
+                            </div>
+                        </div>
+                        <div class="girl-body">
+                            <div class="girl-dress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heart-rain"></div>
         </div>
     </div>
     <script src="game.js"></script>
